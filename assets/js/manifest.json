@@ -6,4 +6,12 @@
   "display": "standalone",
   "scope": "/index.html",
   "start_url": "/"
+  "icons": [
+    {
+        "src": "/images/Taylor_Swift_2020_TS_logo.svg.png",
+        "sizes": "512x390",
+        "type": "image/png",
+        "purpose": "maskable"
+    }
+],
 }
