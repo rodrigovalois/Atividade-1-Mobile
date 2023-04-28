@@ -1,7 +1,7 @@
 {
 "name": "SwiftNation",
 "short_name": "SN",
-"start_url": "/index.html",
+"start_url": "index.html",
 "display": "standalone",
 "description": "The biggest Taylor Swift fanpage in America.",
 "lang": "pt-br",
