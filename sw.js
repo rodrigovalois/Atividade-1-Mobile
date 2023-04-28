@@ -38,3 +38,18 @@ self.addEventListener('fetch', event => {
     })
   );
 });
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js', { scope: '/' })
+  .then(function(registration) {
+    console.log('Service Worker Registered');
+  })
+  .catch(function(error) {
+    console.error('Error registering Service Worker:', error);
+  });
+  
+  // Forçar a atualização do Service Worker quando a página é carregada
+  navigator.serviceWorker.ready.then(function(registration) {
+    registration.update();
+  });
+}
