@@ -1,0 +1,17 @@
+{
+    "name": "SwiftNation",
+    "short_name": "SwiftNation",
+    "theme_color": "#cebb80",
+    "background_color": "#cebb70",
+    "display": "standalone",
+    "scope": "/index.html",
+    "start_url": "index.hmtl",
+    "icons": [
+            {
+                "src": "images/Taylor_Swift_2020_TS_logo.svg.png",
+                "sizes": "512x512",
+                "type": "image/png",
+                "purpose": "maskable"
+            }
+        ]
+}
