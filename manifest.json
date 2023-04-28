@@ -4,8 +4,8 @@
     "theme_color": "#cebb80",
     "background_color": "#cebb80",
     "display": "standalone",
-    "start_url": "https://swift-nation-rodrigo.netlify.app/",
-    "scope": "/index.html",
+    "scope": "./",
+    "start_url": "/index.html",
     "icons": [
             {
                 "src": "images/Taylor_Swift_2020_TS_logo.svg.png",
