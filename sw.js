@@ -1,15 +1,13 @@
-// Define o escopo do Service Worker
-const cacheName = 'swift-nation-rodrigo';
+const cacheName = 'swiftnation';
 const cacheUrls = [
   '/',
   '/index.html',
   '/style.css',
   '/main.js',
-  '/img/logo.png',
-  '/img/swift.jpg',
+  'images/Taylor_Swift_2020_TS_logo.svg.png',
+  'images/Taylor_Swift_2020_TS_logo.svg.png',
 ];
 
-// Instala o Service Worker e adiciona o cache inicial
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(cacheName).then(cache => {
@@ -18,7 +16,6 @@ self.addEventListener('install', event => {
   );
 });
 
-// Ativa o Service Worker e exclui os caches antigos
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys => {
@@ -30,7 +27,6 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Intercepta as solicitações de rede e usa o cache, se disponível
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request).then(response => {
@@ -48,7 +44,6 @@ if ('serviceWorker' in navigator) {
     console.error('Error registering Service Worker:', error);
   });
   
-  // Forçar a atualização do Service Worker quando a página é carregada
   navigator.serviceWorker.ready.then(function(registration) {
     registration.update();
   });
