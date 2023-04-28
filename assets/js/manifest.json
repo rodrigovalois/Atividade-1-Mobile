@@ -6,4 +6,5 @@
   "display": "standalone",
   "scope": "/index.html",
   "start_url": "/"
+  "icon": "/images/Taylor_Swift_2020_TS_logo.svg.png"
 }
