@@ -5,7 +5,7 @@
     "background_color": "#cebb80",
     "display": "standalone",
     "scope": "./",
-    start_url: "./index.html",
+    "start_url": "./index.html",
     "icons": [
             {
                 "src": "images/Taylor_Swift_2020_TS_logo.svg.png",
